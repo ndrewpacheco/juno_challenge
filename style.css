@@ -1,15 +1,15 @@
 /*font-family: 'Cormorant Garamond', serif;
 font-family: 'Montserrat', sans-serif;*/
-
+* {
+  border: 1px dotted green;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 20px;
   color: #4A455C;
- }
-
-li {
-  list-style: none;
+  width: 100%;
+  height: 100%;
  }
 
 a {
@@ -17,25 +17,63 @@ a {
   color: #4A455C;
 }
 
+li {
+  list-style: none;
+ }
+
+
+nav {
+  display: flex;
+  flex-wrap:;
+  flex-direction: row;
+}
 
 footer {
   color: #FFFFFF;
+  background-color: #D64C31;
+  display:flex;
+  flex-direction: row;
 }
 
-.footer a {
+footer a {
   color: #FFFFFF;
 }
 
-.footer h3 {
+footer h3 {
 
   font-weight: 500;
   font-size: 30px;
 }
 
-.footer {
-  background-color: #D64C31;
+.wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+
 }
+
+.header-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.logo {
+  align-self: center;
+}
+
 
 .footer-form {
   background-color: #4A455C;
+
 }
+
+/*
+Mobile (Smartphone) max-width: 480px
+Low Resolution Tablets and ipads max-width: 767px
+Tablets Ipads portrait mode max-width:1024px
+Desktops max-width:1280px
+Huge size (Larger screen) max-width: 1281px and greater
+*/
