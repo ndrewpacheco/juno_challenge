@@ -7,12 +7,13 @@
 
         <title>JUNO Tech Challenge</title>
 
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1ddf7e7131.js" crossorigin="anonymous"></script>
+       <!--  <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet"> -->
         <link href="normalize.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
 
-        <script src="https://kit.fontawesome.com/1ddf7e7131.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
         <!-- <input type="checkbox" id="burger-toggle" class="burger-toggle">
@@ -21,23 +22,82 @@
             <div class="line line-mid"></div>
             <div class="line line-bottom"></div>
         </label> -->
+        <div >
         <header class="wrapper">
-            <nav class="header-info">
-                <!-- <img class="logo"src="assets/juno-logo.png" alt="Juno logo"> -->
-                <nav>
-                        <li style="border: 2px dotted blue;"><a href="#"><img class="logo"src="assets/juno-logo.png" alt="Juno logo"></a></li>
-                        <li style="border: 2px dotted blue;"><a href="#">Course</a></li>
-                        <li style="border: 2px dotted blue;"><a href="#">About</a></li>
-                        <li style="border: 2px dotted blue;"><a href="#">Allumni</a></li>
-                        <li style="border: 2px dotted blue;"><a href="#">Blog</a></li>
-                    <!-- </nav> -->
-            </nav>
+            <div class="header-nav">
+                <li><a class="logo-link" href="#"><img class="logo" src="assets/juno-logo.png" alt="Juno logo"></a></li>
+                <li><a href="#">Course</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Allumni</a></li>
+                <li><a href="#">Blog</a></li>
+            </div>
+            <div class="header-img">
+                <img src="assets/image-1.jpg">
+            </div>
+                <div class="header-text">
+                    <h1>Tech Challenge</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci sagittis eu volutpat odio facilisis mauris sit. Lectus urna duis convallis convallis tellus id.</p>
+                </div>
+
+
+
         </header>
-        <main>
+        <main class="wrapper">
+
+            <div class="section-1">
+                 <h1>Blog</h1>
+                <div class="blog">
+                    <div class="top-blog-posts">
+                        <div class="blog-post short">
+
+                            <img src="assets/image-2.jpg">
+                            <div class="card-text">
+                                <p class="date">Mar 9, 2019</p>
+                                <h2>Juno Tech Test</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                        <div class=" blog-post short">
+                            <img src="assets/image-3.jpg">
+                            <div class="card-text">
+                                <p class="date">Mar 15, 2019</p>
+                                <h2>Juno Tech Test</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                <button>Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-post wide">
+                        <img src="assets/image-5.jpg">
+                        <div class="card-text">
+                            <p class="date">April 30, 2019</p>
+                            <h2><b>Juno Tech Test</b></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <aside class="about-us">
+
+                    <img src="assets/image-4.jpg">
+                    <div class="about-us-text">
+                        <h2>About us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero justo laoreet sit amet. Faucibus a pellentesque sit amet porttitor eget dolor. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Fringilla urna porttitor rhoncus dolor purus non. Ultrices mi tempus imperdiet nulla. Malesuada fames ac turpis egestas maecenas. Fermentum leo vel orci porta non.</p>
+                    </div>
+                </aside>
+
+
+
+            </div>
+            <div class="related-posts">
+
+            </div>
 
         </main>
-        <footer>
-            <div class="footer-info">
+        <footer class="wrapper">
+            <div class="footer">
+                <div class="footer-info">
                 <img src="assets/Juno-logo-white.png" alt="Juno logo in white">
                 <h3>Juno Tech Test</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -49,8 +109,8 @@
                         <li><a href="#">Allumni</a></li>
                         <li><a href="#">Blog</a></li>
                     </nav>
-            </div>
-            <div class="footer-form">
+                </div>
+                <div class="footer-form">
                 <form action="#" method="post">
                     <label for="mailing-list"><h3>Join our mailing list</h3></label>
                     <input type="text" id="mailing-list" name="user_mailing-list" placeholder="Your email address">
@@ -58,7 +118,9 @@
                 </form>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="fontawesome"><i class="fab fa-facebook-f" aria-hidden="true"></i> <i class="fab fa-twitter" aria-hidden="true"></i> <i class="fab fa-instagram" aria-hidden="true"></i> <i class="fab fa-github" aria-hidden="true"></i></div>
+                </div>
             </div>
         </footer>
+    </div>
     </body>
 </html>
