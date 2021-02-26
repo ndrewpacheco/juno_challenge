@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
-
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
-
   color: #4A455C;
   width: 100%;
   height: 100%;
@@ -15,21 +13,20 @@ body {
 a {
   text-decoration: none;
   color: #4A455C;
-  width: 100%;
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 p {
-  margin: 0;
   line-height: 1.75em;
+  margin: 0 0 1em 0;
 }
 
 h1 {
-  margin: 0;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 5.5em;
-  font-weight: 300;
+  font-size: 5.75em;
+  font-weight: 500;
+  width: 100%;
 }
 
 h2 {
@@ -37,30 +34,44 @@ h2 {
   font-weight: 500;
 }
 
+h1, h2 {
+  margin: 0 0 .5em 0;
+}
+
+ul {
+  padding: 0;
+}
+
+
 li {
   list-style: none;
-  align-self: center;
+  margin-right: 2em;
+  /*align-self: center;*/
  }
 
+ header, ul, section, footer {
+  display: flex;
+ }
 
 header {
-  display: flex;
   flex-direction: column;
-
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-
+header a:hover {
+  color: #D64C31;
+}
+section {
+  margin: 0 5.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-main {
-  display: flex;
+button {
+  font-size: 1.375rem;
+  font-weight: 500;
 }
 
 footer {
-  display: flex;
   color: #FFFFFF;
   background-color: #D64C31;
 
@@ -70,16 +81,19 @@ footer a {
   color: #FFFFFF;
 }
 
+footer a:hover {
+  color: #4A455C;
+}
+
 footer h3 {
 
   font-weight: 500;
   font-size: 1.875rem;
+  margin-bottom: 1rem;
 }
 
 .wrapper {
   margin: 0 auto;
-  margin-top: 1.875rem;
-
   max-width: 100rem;
   width: 100%;
   display: flex;
@@ -87,17 +101,18 @@ footer h3 {
   flex-direction: column;
 }
 
-
-.logo {
-  align-self: center;
+.header-nav {
+  margin: 4rem 5.5rem 2rem 5.5rem;
   display: flex;
 }
 
-.header-nav {
-  /*margin: 1.75rem 5.5rem;*/
-  margin: 2rem 5.625rem;
-  display: flex;
-  flex-direction: row;
+#header-logo {
+  margin-right: 4rem;
+}
+
+#header-logo:hover {
+  filter: grayscale(60%);
+  /*filter: drop-shadow(0 0 2px #7C7D98);*/
 }
 
 .header-img {
@@ -105,66 +120,46 @@ footer h3 {
   max-height: 40rem;
   overflow: hidden;
   width: 100%;
-
 }
+
 .header-img img {
-
   width: 100%;
-
+  height: auto;
 }
 
 
 .header-text {
-
-  max-width: 910px;
-  max-height: 335px;
+  max-width: 56.875rem;
+  max-height: 21rem;
   background-color: #D64C31;
   align-self: flex-end;
   margin-top: -120px;
-  padding: 45px 100px;
+  padding: 3rem 6.25rem 3rem 6.5rem;
   color: #FFFFFF;
+}
+
+.header-text h1 {
+  margin: 0;
 }
 
 /*****/
 
 
-.section-1 {
-  margin: 0px 90px;
-  display: flex;
-  flex-wrap: wrap;
-
-  justify-content: space-between;
-}
-.section-1 h1 {
-  width: 100%;
-  margin-bottom: 3.75rem;
-
-  /*45px / 500 medium / Montserrat*/
-}
-
-/*.section-1 h2 {
-  size: 2em;
-  font-weight: 500;
-}*/
-/**/
-
 .blog {
+  padding: 4rem 0;
+}
+.blog-posts {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
   color: #FFF0E7;
 
 }
 
-.blog h2 {
+.blog-posts h2 {
   color: #FFFFFF;
 }
 
-.blog button {
-  background-color: #D64C31;
-  color: #FFFFFF;
-}
 
 .top-blog-posts {
   display: flex;
@@ -173,67 +168,140 @@ footer h3 {
 }
 
 .blog-post {
+  background-color: #4A455C;
+}
+
+.blog-post button {
+  background-color: #D64C31;
+  color: #FFFFFF;
+  border: none;
+  padding: 1rem 2rem;
+}
+
+.blog-post button:hover {
+  color: #D64C31;
+  background-color: #FFFFFF;
+}
+
+.card {
   display: flex;
   flex-direction: column;
-  background-color: #4A455C;
-
-
-}
-
-.card-text {
-  margin: 2em;
-}
-
-.short {
-
   width: 27.5rem;
 }
 
-.wide {
+.card-text {
+  margin: 2.5rem;
+}
 
+.date {
+  text-transform: uppercase;
+}
+.wide {
   width: 58.125rem;
+  flex-shrink: 3;
 }
 
 .about-us {
   color: #FFF0E7;
   background-color: #7C7D98;
-  display: flex;
-  flex-direction: column;
-  width: 27.5rem;
   height: 100%;
-
 }
 
-.about-us-text {
-  margin: 2.5rem;
+.related-posts {
+  background-color: #FFF0E7;
+  padding: 3rem 0;
 }
 
-.about-us h2 {
-  margin-top: 0;
+.related-posts h1 {
+  font-size: 4rem;
+}
+
+.related-post button {
+  background-color: #FFFFFF;
+  border: 1px solid #D64C31;
+  padding: 1rem 2rem;
+}
+
+.related-post button:hover {
+  color: #FFFFFF;
+  background-color: #D64C31;
+}
+
+
+.related-post {
+  background-color: #FFFFFF;
+  margin-bottom: 4rem;
+}
+
+.related-post h2 {
+  color: #D64C31;
 }
 
 /************/
 
 
-
-.date {
-  text-transform: uppercase;
-}
 .footer {
-
   display:flex;
   flex-direction: row;
+  align-items: flex-end;
+}
+
+.footer-nav {
+  margin-bottom: 3rem;
 }
 
 .footer-info {
   margin: 50px 0px 0px 90px;
 }
+
 .footer-form {
+  width: 55%;
   background-color: #4A455C;
-  margin: -65px 90px 0px 90px;
+  margin: 0 5.625rem;
+  margin-top: -65px;
+}
+
+.mailing-list {
+  margin: 6.875rem 4.375rem 2rem 4.375rem;
+  width: 100;
+}
+
+.mailing-list h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+}
+
+.mailing-list button {
+  padding: 1rem 2rem;
+  background-color: #ffceb0;
+  margin: 1rem 0;
+  border: 1px solid black;
+  border-radius: .25rem;
+  box-shadow: 0px 1px 2px black;
 
 }
 
+#mailing-list {
+  width: 100%;
+  padding: 1.25rem 0;
+  padding-left: 1rem;
+  border-radius: .25rem;
+}
+
+.socials i {
+  margin-right: 2rem;
+}
+
+.fab:hover {
+  color: #D64C31;
+}
+
+/*@media (max-width: 1024px) {
+  .blog-posts {
+    width: 100%;
+  }
+*/
+ /* CSS Rules */ }
 /*
 Mobile (Smartphone) max-width: 480px
 Low Resolution Tablets and ipads max-width: 767px
