@@ -25,6 +25,7 @@ a {
 }
 
 p {
+  font-size: 1.5rem;
   line-height: 1.75em;
   margin: 0 0 1em 0;
 }
@@ -36,7 +37,7 @@ nav {
 
 h1 {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 7.1875rem;
+  font-size: 6.5rem;
   font-weight: 500;
   width: 100%;
 }
@@ -98,7 +99,7 @@ footer h3 {
   flex-wrap: wrap;
   max-width: 1600px;
   margin: 0 auto;
-  /*border: 1px solid magenta;*/
+  border: 1px solid magenta;
 }
 
 
@@ -106,7 +107,7 @@ footer h3 {
   margin: 2rem 0;
   width: 90%;
   /*align-self: center;*/
-  /*border: 1px solid blue;*/
+  border: 1px solid blue;
 }
 
 .top-nav {
@@ -177,6 +178,7 @@ footer h3 {
 }
 
 .header-text h1 {
+  font-size: 7.1875rem;
   margin: 0;
 }
 
@@ -233,7 +235,7 @@ footer h3 {
 
 .related-posts {
   background-color: #FFF0E7;
-  padding: 3rem 0;
+  /*padding: 3rem 0;*/
 }
 
 .related-posts h1 {
@@ -254,7 +256,6 @@ footer h3 {
 
 .related-post {
   background-color: #FFFFFF;
-  margin-bottom: 4rem;
 }
 
 .related-post h2 {
@@ -271,23 +272,24 @@ footer h3 {
 }
 
 .footer-nav {
-  margin-bottom: 3rem;
+  justify-content: space-between;
+  margin: 2rem 0;
 }
 
-.footer-info {
-  margin: 50px 0px 0px 90px;
+.footer-info img {
+  width: initial;
+  /*margin: 50px 0px 0px 90px;*/
 }
 
 .footer-form {
-  width: 55%;
+  /*width: 55%;*/
   background-color: #4A455C;
-  margin: 0 5.625rem;
-  margin-top: -5%;
+
 }
 
 .mailing-list {
-  margin: 6.875rem 4.375rem 2rem 4.375rem;
-  width: 100;
+   /* margin: 6.875rem 4.375rem 2rem 4.375rem;
+    width: 100;*/
 }
 
 .mailing-list h2 {
@@ -306,9 +308,9 @@ footer h3 {
 }
 
 #mailing-list {
-  width: 100%;
-  padding: 1.25rem 0;
-  padding-left: 1rem;
+  width: 50%;
+  padding: 1rem 0;
+  margin: 1rem 0;
   border-radius: .25rem;
 }
 

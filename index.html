@@ -21,7 +21,7 @@
 
        <!--  <div class="wrapper border"> -->
         <div class="container">
-            <div class="card top-nav">
+            <div class="top-nav card">
                 <a href="#" class="header-logo"><img src="assets/juno-logo.png"  alt="Juno logo"></a>
                 <nav>
                     <ul class="nav-links">
@@ -46,11 +46,11 @@
                 </div>
             </header>
         </div>
-        <div class="container">
+        <section class="container" id="blog">
             <div class="card">
                 <h1>Blog</h1>
             </div>
-            <div class="blog-post container ">
+            <div class="blog-post container">
                 <img src="assets/image-2.jpg">
                 <div class="card">
                     <p class="date">Mar 9, 2019</p>
@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="blog-post container ">
+            <div class="blog-post container">
                 <img src="assets/image-3.jpg">
                 <div class="card">
                     <p class="date">Mar 15, 2019</p>
@@ -78,55 +78,41 @@
                     <button>Read More</button>
                 </div>
             </div>
+        </section>
+        <aside class="about-us container" id="about-us">
+            <img src="assets/image-4.jpg">
+            <div class="card">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero justo laoreet sit amet. Faucibus a pellentesque sit amet porttitor eget dolor. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Fringilla urna porttitor rhoncus dolor purus non. Ultrices mi tempus imperdiet nulla. Malesuada fames ac turpis egestas maecenas. Fermentum leo vel orci porta non.</p>
+            </div>
+        </aside>
 
 
-
+    <section class="related-posts container" id="related-posts">
+        <div class="card">
+            <h1>Related posts:</h1>
         </div>
-
-
-
-
-
-
-
-
-               <!--  </div>
-                 -->
-
-            <!-- <aside class="card about-us">
-
-                <img src="assets/image-4.jpg">
-                <div class="card-text">
-                    <h2>About us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero justo laoreet sit amet. Faucibus a pellentesque sit amet porttitor eget dolor. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Fringilla urna porttitor rhoncus dolor purus non. Ultrices mi tempus imperdiet nulla. Malesuada fames ac turpis egestas maecenas. Fermentum leo vel orci porta non.</p>
-                </div>
-            </aside> -->
-
-
-  <!--   <div class="related-posts">
-    <section>
-        <h1>Related posts:</h1>
-        <div class="card related-post">
+        <div class="related-post container">
             <img src="assets/image-2.jpg">
-            <div class="card-text">
+            <div class="card">
                 <p class="date">Mar 9, 2019</p>
                 <h2>Juno Tech Test</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                 <button>Read More</button>
             </div>
         </div>
-        <div class="card related-post">
+        <div class="related-post container">
             <img src="assets/image-3.jpg">
-            <div class="card-text">
+            <div class="card">
                 <p class="date">Mar 15, 2019</p>
                 <h2>Juno Tech Test</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                 <button>Read More</button>
             </div>
         </div>
-        <div class="card related-post">
+        <div class="related-post container">
             <img src="assets/image-3.jpg">
-            <div class="card-text">
+            <div class="card">
                 <p class="date">Mar 15, 2019</p>
                 <h2>Juno Tech Test</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
@@ -134,16 +120,34 @@
             </div>
         </div>
     </section>
-    </div> -->
-  <!--   <div class="footer">
+    </div>
     <footer>
-        <div class="footer-info">
+        <div class="footer-form container">
+            <div class=" card">
+                <div class="mailing-list">
+                    <form action="#" method="post">
+                        <label for="mailing-list"><h2>Join our mailing list</h2></label>
+                        <input type="text" id="mailing-list" name="user_mailing-list" placeholder="Your email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="fontawesome socials">
+                        <i class="fab fa-facebook-f fa-2x" aria-hidden="true"></i>
+                        <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                        <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                        <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info container">
+            <div class="card">
             <img src="assets/Juno-logo-white.png" alt="Juno logo in white">
             <h3>Juno Tech Test</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-            <nav class="footer-nav">
-                <ul>
+            <nav>
+                <ul class="container footer-nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Course</a></li>
                     <li><a href="#">About</a></li>
@@ -152,24 +156,9 @@
                 </ul>
             </nav>
             <p class="copyright">© 2012-2019 Juno College of Technology</p>
-        </div>
-        <div class="footer-form">
-            <div class="mailing-list">
-                <form action="#" method="post">
-                    <label for="mailing-list"><h2>Join our mailing list</h2></label>
-                    <input type="text" id="mailing-list" name="user_mailing-list" placeholder="Your email address">
-                    <button type="submit">Subscribe</button>
-                </form>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="fontawesome socials">
-                    <i class="fab fa-facebook-f fa-2x" aria-hidden="true"></i>
-                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
-                    <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
-                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
-                </div>
             </div>
         </div>
     </footer>
-    </div> -->
+
     </body>
     </html>
