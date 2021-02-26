@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>JUNO Tech Challenge</title>
         <script src="https://kit.fontawesome.com/1ddf7e7131.js" crossorigin="anonymous"></script>
         <link href="normalize.css" rel="stylesheet">
@@ -15,17 +16,26 @@
             <div class="line line-mid"></div>
             <div class="line line-bottom"></div>
         </label> -->
-        <div class="wrapper">
-            <header>
-                <nav class="header-nav">
-                    <a href="#" id="header-logo"><img src="assets/juno-logo.png" alt="Juno logo"></a>
-                    <ul>
+
+        <!-- <div class="wrapper"> -->
+
+       <!--  <div class="wrapper border"> -->
+        <div class="container">
+            <div class="top-nav">
+                <a href="#" class="header-logo"><img src="assets/juno-logo.png"  alt="Juno logo"></a>
+                <nav>
+                    <ul class="nav-links">
                         <li><a href="#">Course</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Allumni</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </nav>
+            </div>
+        </div>
+
+       <div class="container">
+            <header class="header">
                 <div class="header-img">
                     <img src="assets/image-1.jpg">
                 </div>
@@ -34,54 +44,14 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci sagittis eu volutpat odio facilisis mauris sit. Lectus urna duis convallis convallis tellus id.</p>
                 </div>
             </header>
-            <div class=" blog">
-            <section>
-                <h1>Blog</h1>
-                <div class="blog-posts">
-                    <div class="top-blog-posts">
-                        <div class="card blog-post">
-                            <img src="assets/image-2.jpg">
-                            <div class="card-text">
-                                <p class="date">Mar 9, 2019</p>
-                                <h2>Juno Tech Test</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                <button>Read More</button>
-                            </div>
-                        </div>
-                        <div class="card blog-post">
-                            <img src="assets/image-3.jpg">
-                            <div class="card-text">
-                                <p class="date">Mar 15, 2019</p>
-                                <h2>Juno Tech Test</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                                <button>Read More</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card blog-post wide">
-                        <img src="assets/image-5.jpg">
-                        <div class="card-text">
-                            <p class="date">April 30, 2019</p>
-                            <h2><b>Juno Tech Test</b></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                            <button>Read More</button>
-                        </div>
-                    </div>
-                </div>
-                <aside class="card about-us">
+        </div>
 
-                    <img src="assets/image-4.jpg">
-                    <div class="card-text">
-                        <h2>About us</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero justo laoreet sit amet. Faucibus a pellentesque sit amet porttitor eget dolor. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Fringilla urna porttitor rhoncus dolor purus non. Ultrices mi tempus imperdiet nulla. Malesuada fames ac turpis egestas maecenas. Fermentum leo vel orci porta non.</p>
-                    </div>
-                </aside>
-            </section>
-            </div>
-        <div class="related-posts">
-            <section>
-                <h1>Related posts:</h1>
-                <div class="card related-post">
+   <!--  <div class="blog">
+    <section>
+        <h1>Blog</h1>
+        <div class="blog-posts">
+            <div class="top-blog-posts">
+                <div class="card blog-post">
                     <img src="assets/image-2.jpg">
                     <div class="card-text">
                         <p class="date">Mar 9, 2019</p>
@@ -90,7 +60,7 @@
                         <button>Read More</button>
                     </div>
                 </div>
-                <div class="card related-post">
+                <div class="card blog-post">
                     <img src="assets/image-3.jpg">
                     <div class="card-text">
                         <p class="date">Mar 15, 2019</p>
@@ -99,53 +69,94 @@
                         <button>Read More</button>
                     </div>
                 </div>
-                <div class="card related-post">
-                    <img src="assets/image-3.jpg">
-                    <div class="card-text">
-                        <p class="date">Mar 15, 2019</p>
-                        <h2>Juno Tech Test</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                        <button>Read More</button>
-                    </div>
+            </div>
+            <div class="card blog-post wide">
+                <img src="assets/image-5.jpg">
+                <div class="card-text">
+                    <p class="date">April 30, 2019</p>
+                    <h2><b>Juno Tech Test</b></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                    <button>Read More</button>
                 </div>
-            </section>
+            </div>
         </div>
-        <div class="footer">
-            <footer>
-                <div class="footer-info">
-                    <img src="assets/Juno-logo-white.png" alt="Juno logo in white">
-                    <h3>Juno Tech Test</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <aside class="card about-us">
 
-                    <nav class="footer-nav">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Course</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Allumni</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </nav>
-                    <p class="copyright">© 2012-2019 Juno College of Technology</p>
-                </div>
-                <div class="footer-form">
-                    <div class="mailing-list">
-                        <form action="#" method="post">
-                            <label for="mailing-list"><h2>Join our mailing list</h2></label>
-                            <input type="text" id="mailing-list" name="user_mailing-list" placeholder="Your email address">
-                            <button type="submit">Subscribe</button>
-                        </form>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <div class="fontawesome socials">
-                            <i class="fab fa-facebook-f fa-2x" aria-hidden="true"></i>
-                            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
-                            <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
-                            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <img src="assets/image-4.jpg">
+            <div class="card-text">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero justo laoreet sit amet. Faucibus a pellentesque sit amet porttitor eget dolor. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Fringilla urna porttitor rhoncus dolor purus non. Ultrices mi tempus imperdiet nulla. Malesuada fames ac turpis egestas maecenas. Fermentum leo vel orci porta non.</p>
+            </div>
+        </aside>
+    </section>
+    </div> -->
+  <!--   <div class="related-posts">
+    <section>
+        <h1>Related posts:</h1>
+        <div class="card related-post">
+            <img src="assets/image-2.jpg">
+            <div class="card-text">
+                <p class="date">Mar 9, 2019</p>
+                <h2>Juno Tech Test</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <button>Read More</button>
+            </div>
         </div>
-    </div>
+        <div class="card related-post">
+            <img src="assets/image-3.jpg">
+            <div class="card-text">
+                <p class="date">Mar 15, 2019</p>
+                <h2>Juno Tech Test</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="card related-post">
+            <img src="assets/image-3.jpg">
+            <div class="card-text">
+                <p class="date">Mar 15, 2019</p>
+                <h2>Juno Tech Test</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </section>
+    </div> -->
+  <!--   <div class="footer">
+    <footer>
+        <div class="footer-info">
+            <img src="assets/Juno-logo-white.png" alt="Juno logo in white">
+            <h3>Juno Tech Test</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Allumni</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">© 2012-2019 Juno College of Technology</p>
+        </div>
+        <div class="footer-form">
+            <div class="mailing-list">
+                <form action="#" method="post">
+                    <label for="mailing-list"><h2>Join our mailing list</h2></label>
+                    <input type="text" id="mailing-list" name="user_mailing-list" placeholder="Your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="fontawesome socials">
+                    <i class="fab fa-facebook-f fa-2x" aria-hidden="true"></i>
+                    <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div> -->
     </body>
-</html>
+    </html>
