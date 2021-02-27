@@ -140,6 +140,7 @@ footer h3 {
 .header {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 .header-logo  {
@@ -162,17 +163,14 @@ footer h3 {
 }
 
 .header-content {
-  display: flex;
-  width: 100%;
   background-color: #D64C31;
-  justify-content: center;
-  align-items: center;
+
 }
 
-.header-bg-color {
+/*.header-bg-color {
   background-color: #D64C31;
 }
-
+*/
 
 .header-text {
   color: #FFFFFF;
@@ -372,10 +370,16 @@ footer h3 {
     margin: 0;
    }
 
+   .header-content {
+
+    width: 85%;
+    align-self: flex-end;
+    margin: 0;
+    margin-top: -7rem;
+   }
 
   .blog-post {
     width: 42.5%;
-
     margin-bottom: 5%;
   }
 
