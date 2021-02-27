@@ -20,7 +20,7 @@
         <!-- <div class="wrapper"> -->
 
        <!--  <div class="wrapper border"> -->
-        <div class="container">
+        <div class="container" id="top-nav">
             <div class="top-nav card">
                 <a href="#" class="header-logo"><img src="assets/juno-logo.png"  alt="Juno logo"></a>
                 <nav>
@@ -33,7 +33,7 @@
                 </nav>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="header">
             <header class="header">
                 <div class="header-img">
                     <img src="assets/image-1.jpg">
@@ -46,49 +46,53 @@
                 </div>
             </header>
         </div>
-        <section class="container" id="blog">
-            <div class="card">
-                <h1>Blog</h1>
-            </div>
-            <div class="blog-post container">
-                <img src="assets/image-2.jpg">
+        <div class="container main-content">
+            <section class="container blog" id="blog">
                 <div class="card">
-                    <p class="date">Mar 9, 2019</p>
-                    <h2>Juno Tech Test</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    <button>Read More</button>
+                    <h1>Blog</h1>
                 </div>
-            </div>
+                <div class="container blog-posts">
+                <div class="blog-post container">
+                    <img src="assets/image-2.jpg">
+                    <div class="card">
+                        <p class="date">Mar 9, 2019</p>
+                        <h2>Juno Tech Test</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
 
-            <div class="blog-post container">
-                <img src="assets/image-3.jpg">
+                <div class="blog-post container">
+                    <img src="assets/image-3.jpg">
+                    <div class="card">
+                        <p class="date">Mar 15, 2019</p>
+                        <h2>Juno Tech Test</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            <!-- </div> -->
+            <!--     <div class="break"></div> -->
+                <div class="wide blog-post container">
+                    <img src="assets/image-5.jpg">
+                    <div class="card">
+                        <p class="date">April 30, 2019</p>
+                        <h2><b>Juno Tech Test</b></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </section>
+            <aside class="container about-us" id="about-us">
+                <img src="assets/image-4.jpg">
                 <div class="card">
-                    <p class="date">Mar 15, 2019</p>
-                    <h2>Juno Tech Test</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    <button>Read More</button>
+                    <h2>About us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero justo laoreet sit amet. Faucibus a pellentesque sit amet porttitor eget dolor. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Fringilla urna porttitor rhoncus dolor purus non. Ultrices mi tempus imperdiet nulla. Malesuada fames ac turpis egestas maecenas. Fermentum leo vel orci porta non.</p>
                 </div>
-            </div>
-            <div class="wide blog-post container">
-                <img src="assets/image-5.jpg">
-                <div class="card">
-                    <p class="date">April 30, 2019</p>
-                    <h2><b>Juno Tech Test</b></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-                    <button>Read More</button>
-                </div>
-            </div>
-        </section>
-        <aside class="about-us container" id="about-us">
-            <img src="assets/image-4.jpg">
-            <div class="card">
-                <h2>About us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero justo laoreet sit amet. Faucibus a pellentesque sit amet porttitor eget dolor. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Fringilla urna porttitor rhoncus dolor purus non. Ultrices mi tempus imperdiet nulla. Malesuada fames ac turpis egestas maecenas. Fermentum leo vel orci porta non.</p>
-            </div>
-        </aside>
+            </aside>
 
-
-    <section class="related-posts container" id="related-posts">
+        </div>
+        <section class="container related-posts" id="related-posts">
         <div class="card">
             <h1>Related posts:</h1>
         </div>
@@ -119,9 +123,8 @@
                 <button>Read More</button>
             </div>
         </div>
-    </section>
-    </div>
-    <footer>
+        </section>
+        <footer>
         <div class="footer-form container">
             <div class=" card">
                 <div class="mailing-list">
@@ -158,7 +161,6 @@
             <p class="copyright">© 2012-2019 Juno College of Technology</p>
             </div>
         </div>
-    </footer>
-
+        </footer>
     </body>
-    </html>
+</html>

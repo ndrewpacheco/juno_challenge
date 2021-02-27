@@ -99,7 +99,7 @@ footer h3 {
   flex-wrap: wrap;
   max-width: 1600px;
   margin: 0 auto;
-  border: 1px solid magenta;
+  /*border: 1px solid magenta;*/
 }
 
 
@@ -107,19 +107,21 @@ footer h3 {
   margin: 2rem 0;
   width: 90%;
   /*align-self: center;*/
-  border: 1px solid blue;
+  /*border: 1px solid blue;*/
 }
 
 .top-nav {
   display: flex;
   text-align: center;
   flex-direction: column;
+  margin: 1rem 0;
 }
 
 .top-nav img {
   width: 100%;
   max-width: 396px;
   height: 100%;
+
 
 }
 
@@ -183,24 +185,33 @@ footer h3 {
 }
 
 /*****/
+
+.break {
+  width: 100%;
+
+}
 .blog-title {
 
 }
 
 .blog {
-  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .blog h1 {
   /*font-size: 6.875rem;*/
 }
 
-.blog-posts h2 {
-  color: #FFFFFF;
+.blog-posts {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 
 .blog-post {
+  margin: 0;
   color: #FFF0E7;
   background-color: #4A455C;
 }
@@ -360,6 +371,26 @@ footer h3 {
   .nav-links {
     margin: 0;
    }
+
+
+  .blog-post {
+    width: 42.5%;
+
+    margin-bottom: 5%;
+  }
+
+
+  .wide, .about-us {
+    width: 90%;
+
+  }
+
+
+
+  .about-us, .related-post {
+    width: 90%;
+    margin-bottom: 5%;
+  }
 }
 
 @media (min-width: 1024px) {
