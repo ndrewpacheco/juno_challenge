@@ -22,8 +22,12 @@ p {
 }
 
 nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
 h1 {
@@ -81,9 +85,14 @@ footer h3 {
 
 .container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -96,9 +105,14 @@ footer h3 {
 
 /*** HEADER ***/
 .top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   margin: 3.6875rem 0 1.875rem 0;
 }
 
@@ -112,20 +126,34 @@ footer h3 {
 
 .nav-links {
   margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   width: 100%;
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  -webkit-box-pack: end;
+       -ms-flex-pack: end;
+           justify-content: flex-end;
 
 }
 
 .header-logo  {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -135,9 +163,14 @@ footer h3 {
 
 .header-content {
   background-color: #D64C31;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .header-text {
@@ -156,19 +189,29 @@ footer h3 {
 
 .main-content {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   max-width: 1600px;
   margin: 0 auto;
 }
 
 .blog-posts {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   max-width: 1600px;
   margin: 0 auto;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .blog-post {
@@ -202,9 +245,12 @@ footer h3 {
 /*** SECONDARY CONTENT ***/
 
 .secondary-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #FFF0E7;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 
 .secondary-content h1 {
@@ -233,6 +279,8 @@ footer h3 {
 /*** FOOTER ***/
 
 .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -258,9 +306,14 @@ footer h3 {
 .footer-form {
   background-color: #4A455C;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   max-width: 1600px;
 }
 
@@ -292,6 +345,8 @@ footer h3 {
 }
 
 .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -326,20 +381,30 @@ footer h3 {
 
   .top-nav {
     max-width: 768px;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
 
   .nav-links {
     margin-left: 4.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 85%;
   }
 
   .header-content {
     width: 65%;
+    -ms-flex-item-align: end;
     align-self: flex-end;
     margin: 0;
     margin-top: -14rem;
@@ -365,7 +430,7 @@ footer h3 {
   }
 
   .footer-nav {
-  max-width: 75%;
+    max-width: 75%;
   }
 }
 
@@ -380,14 +445,18 @@ footer h3 {
 
   .header-content {
     width: 69.625%;
+    -ms-flex-item-align: end;
     align-self: flex-end;
+
     margin: 0;
     margin-top: -7.4375rem;
   }
 
   .blog-posts {
     margin: 0;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 58.125%;
     margin-bottom: 3.125rem;
   }
@@ -408,9 +477,13 @@ footer h3 {
   }
 
   .related-posts {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 88.75%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .related-post {
@@ -420,10 +493,18 @@ footer h3 {
   }
 
   .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     max-width: 1600px;
     margin: 0 auto;
   }
@@ -460,11 +541,16 @@ footer h3 {
   }
 
   .nav-links {
-  margin-left: 4.2rem;
+    margin-left: 4.2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 58%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+    width: 58%;
   }
 }
-
