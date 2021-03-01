@@ -97,13 +97,13 @@ footer h3 {
   margin: 0 auto;
 }
 
-
 .card {
   margin: 2.8125rem 2.4375rem;
   width: 88.75%;
 }
 
 /*** HEADER ***/
+
 .top-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -535,7 +535,6 @@ footer h3 {
 }
 
 @media (min-width: 1280px) {
-
   p {
     font-size: 1.25rem;
   }
