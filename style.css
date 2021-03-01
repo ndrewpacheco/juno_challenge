@@ -108,7 +108,6 @@ footer h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -116,9 +115,7 @@ footer h3 {
   margin: 3.6875rem 0 1.875rem 0;
 }
 
-.top-nav img {
-  width: 100%;
-}
+
 
 .top-nav a:hover {
   color: #D64C31;
@@ -149,12 +146,6 @@ footer h3 {
        -ms-flex-pack: end;
            justify-content: flex-end;
 
-}
-
-.header-logo  {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .header-logo:hover {
@@ -389,6 +380,7 @@ footer h3 {
 
 
   .nav-links {
+    margin: 0;
     margin-left: 4.3rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -441,6 +433,10 @@ footer h3 {
 @media (min-width: 1024px) {
   html {
     font-size: 16px;
+  }
+
+  p {
+    font-size: 1.25rem;
   }
 
   .top-nav {
@@ -538,22 +534,9 @@ footer h3 {
   }
 }
 
-@media (min-width: 1280px) {
-  p {
-    font-size: 1.25rem;
-  }
-
+@media (min-width: 1440px) {
   .nav-links {
     margin-left: 4.2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-    width: 58%;
+    width: 60%;
   }
 }
